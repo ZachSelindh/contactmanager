@@ -6,7 +6,6 @@ function ContactList() {
     email: "joe@test.com",
     phone: 281 - 555 - 5555
   };
-  return()
 }
 
 export default ContactList;

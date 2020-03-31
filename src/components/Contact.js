@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Contact(props) {
   const { name, email, phone } = props;
@@ -12,5 +13,11 @@ function Contact(props) {
     </div>
   );
 }
+
+Contact.propTypes = {
+  name: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  phone: PropTypes.string.isRequired
+};
 
 export default Contact;
