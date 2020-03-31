@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Contact(props) {
-  const { name, email, phone } = props;
+  const { name, email, phone } = props.contact;
   return (
     <div className="card card-body mb-3">
       <h4>{name}</h4>
@@ -15,9 +15,7 @@ function Contact(props) {
 }
 
 Contact.propTypes = {
-  name: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  phone: PropTypes.string.isRequired
+  contact: PropTypes.object.isRequired
 };
 
 export default Contact;
