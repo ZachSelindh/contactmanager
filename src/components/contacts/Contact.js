@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 
+import { Link } from "react-router-dom";
+
 import { Consumer } from "../../context";
 
 class Contact extends Component {
@@ -39,9 +41,25 @@ class Contact extends Component {
                   ->
                 </i>
                 <i
-                  style={{ cursor: "pointer", float: "right", color: "red" }}
+                  style={{
+                    cursor: "pointer",
+                    float: "right",
+                    color: "red",
+                  }}
                   onClick={this.onDeleteClick.bind(this, id, dispatch)}
                 >
+                  <Link to={`contact/edit/${id}`}>
+                    <i
+                      style={{
+                        cursor: "pointer",
+                        float: "right",
+                        color: "black",
+                        marginRight: "1em",
+                      }}
+                    >
+                      Edit
+                    </i>
+                  </Link>
                   x
                 </i>
               </h4>
