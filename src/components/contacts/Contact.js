@@ -1,19 +1,22 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import axios from "axios";
 
 import { Consumer } from "../../context";
 
 class Contact extends Component {
   state = {
-    showContactInfo: false
+    showContactInfo: false,
   };
 
-  onShowClick = e => {
+  onShowClick = (e) => {
     this.setState({ showContactInfo: !this.state.showContactInfo });
   };
 
   onDeleteClick = (id, dispatch) => {
-    dispatch({ type: "DELETE_CONTACT", payload: id });
+    axios
+      .delete(`https://jsonplaceholder.typicode.com/users/${id}`)
+      .then((res) => dispatch({ type: "DELETE_CONTACT", payload: id }));
   };
 
   render() {
@@ -22,7 +25,7 @@ class Contact extends Component {
 
     return (
       <Consumer>
-        {value => {
+        {(value) => {
           const { dispatch } = value;
           return (
             <div className="card card-body mb-3">
@@ -53,7 +56,7 @@ class Contact extends Component {
 }
 
 Contact.propTypes = {
-  contact: PropTypes.object.isRequired
+  contact: PropTypes.object.isRequired,
 };
 
 export default Contact;
