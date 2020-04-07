@@ -48,7 +48,12 @@ class Contact extends Component {
                 >
                   x
                 </i>
-                <Link to={`contact/edit/${id}`}>
+                <Link
+                  to={{
+                    pathname: `contact/edit/${id}`,
+                    state: { id, name, email, phone },
+                  }}
+                >
                   <p
                     style={{
                       cursor: "pointer",

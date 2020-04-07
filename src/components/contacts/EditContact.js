@@ -12,21 +12,25 @@ class EditContact extends Component {
   };
 
   async componentDidMount() {
-    const { id } = this.props.match.params;
-
-    const res = await axios.get(
-      `https://jsonplaceholder.typicode.com/users/${id}`
-    );
-
-    const contact = res.data;
-
-    console.log(contact);
-
-    this.setState({
-      name: contact.name,
-      email: contact.email,
-      phone: contact.phone,
-    });
+    if (this.props.location.state) {
+      const { name, email, phone } = await this.props.location.state;
+      this.setState({
+        name,
+        email,
+        phone,
+      });
+    } else {
+      const { id } = this.props.match.params;
+      const res = await axios.get(
+        `https://jsonplaceholder.typicode.com/users/${id}`
+      );
+      const { name, email, phone } = res.data;
+      this.setState({
+        name,
+        email,
+        phone,
+      });
+    }
   }
 
   onChange = (e) => {
