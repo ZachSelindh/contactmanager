@@ -17,7 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <Provider>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="/">
         <div className="App">
           <Header branding="Contact Manager" />
           <div className="container">
