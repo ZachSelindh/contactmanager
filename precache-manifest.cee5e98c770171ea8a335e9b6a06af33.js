@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "345d59e0406c0738ddb42f90b4b76aef",
+    "revision": "37f602af090947ddbc67fbe1f044b681",
     "url": "/traversy-react-udemy-course/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/traversy-react-udemy-course/static/js/2.ebb62d4a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d3ab924c4c962c45b631",
-    "url": "/traversy-react-udemy-course/static/js/main.622c6f1c.chunk.js"
+    "revision": "d12d4421cc6b7b8acfe7",
+    "url": "/traversy-react-udemy-course/static/js/main.8b6a479e.chunk.js"
   },
   {
     "revision": "09ba93a00bd14f295870",
