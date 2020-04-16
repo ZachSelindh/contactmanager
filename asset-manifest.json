@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/traversy-react-udemy-course/static/js/main.67d71942.chunk.js",
+    "main.js.map": "/traversy-react-udemy-course/static/js/main.67d71942.chunk.js.map",
+    "runtime-main.js": "/traversy-react-udemy-course/static/js/runtime-main.2414dc2d.js",
+    "runtime-main.js.map": "/traversy-react-udemy-course/static/js/runtime-main.2414dc2d.js.map",
+    "static/css/2.de424728.chunk.css": "/traversy-react-udemy-course/static/css/2.de424728.chunk.css",
+    "static/js/2.7263193d.chunk.js": "/traversy-react-udemy-course/static/js/2.7263193d.chunk.js",
+    "static/js/2.7263193d.chunk.js.map": "/traversy-react-udemy-course/static/js/2.7263193d.chunk.js.map",
+    "index.html": "/traversy-react-udemy-course/index.html",
+    "precache-manifest.5bfe4b6f9d7cd15b03a392120ed885a8.js": "/traversy-react-udemy-course/precache-manifest.5bfe4b6f9d7cd15b03a392120ed885a8.js",
+    "service-worker.js": "/traversy-react-udemy-course/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/traversy-react-udemy-course/static/css/2.de424728.chunk.css.map",
+    "static/js/2.7263193d.chunk.js.LICENSE.txt": "/traversy-react-udemy-course/static/js/2.7263193d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2414dc2d.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.7263193d.chunk.js",
+    "static/js/main.67d71942.chunk.js"
+  ]
+}
