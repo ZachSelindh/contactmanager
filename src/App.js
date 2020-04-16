@@ -1,6 +1,6 @@
 import React from "react";
 
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import ContactList from "./components/contacts/ContactList";
 import Header from "./components/layout/Header";
@@ -17,7 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <Provider>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Header branding="Contact Manager" />
           <div className="container">
