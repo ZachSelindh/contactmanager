@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/traversy-react-udemy-course/precache-manifest.b488977160999ee59278d5a2c2848a2e.js"
+  "/traversy-react-udemy-course/precache-manifest.6b7c985fbfd3285a9c474fd5d5630d7a.js"
 );
 
 self.addEventListener('message', (event) => {
